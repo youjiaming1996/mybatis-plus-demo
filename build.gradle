@@ -1,5 +1,3 @@
-"cp pre-push .git/hooks/pre-push".execute()
-"chmod 744 .git/hooks/pre-push".execute()
 plugins {
     id 'org.springframework.boot' version '2.5.4'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
@@ -13,6 +11,10 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+
+
+"cp pre-push .git/hooks/pre-push".execute()
+"chmod 744 .git/hooks/pre-push".execute()
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
