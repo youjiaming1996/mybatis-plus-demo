@@ -1,6 +1,5 @@
 "cp pre-push .git/hooks/pre-push".execute()
 "chmod 744 .git/hooks/pre-push".execute()
-
 plugins {
     id 'org.springframework.boot' version '2.5.4'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
